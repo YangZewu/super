@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminServer.cs" />
     <Compile Include="DBHlper.cs" />
+    <Compile Include="GoodsServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="userServer.cs" />
   </ItemGroup>
