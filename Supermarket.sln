@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "超市管理系统", "超市管理系统\超市管理系统.csproj", "{DD1B19B7-F88B-4B96-8E2C-6FF32F12D8B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{FDA57FA2-B882-4DA8-B377-C9FB6946B3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{F2E829C3-98F8-4772-AD01-2552F7535C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DD1B19B7-F88B-4B96-8E2C-6FF32F12D8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1B19B7-F88B-4B96-8E2C-6FF32F12D8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1B19B7-F88B-4B96-8E2C-6FF32F12D8B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA57FA2-B882-4DA8-B377-C9FB6946B3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA57FA2-B882-4DA8-B377-C9FB6946B3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA57FA2-B882-4DA8-B377-C9FB6946B3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA57FA2-B882-4DA8-B377-C9FB6946B3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E829C3-98F8-4772-AD01-2552F7535C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E829C3-98F8-4772-AD01-2552F7535C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E829C3-98F8-4772-AD01-2552F7535C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E829C3-98F8-4772-AD01-2552F7535C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
