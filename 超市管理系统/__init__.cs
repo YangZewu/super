@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace 超市管理系统
 {
-    public partial class Form1 : Form
+    public partial class __init__ : Form
     {
-        public Form1()
+        public __init__()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace 超市管理系统
 {
-    partial class Form2
+    partial class __init__
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // __init__
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            this.BackgroundImage = global::超市管理系统.Properties.Resources.登陆背景图;
+            this.ClientSize = new System.Drawing.Size(971, 437);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "__init__";
+            this.Text = "__init__";
+            this.TransparencyKey = System.Drawing.Color.Black;
+            this.ResumeLayout(false);
+
         }
 
         #endregion
