@@ -36,6 +36,12 @@ namespace DAL
             }
 
         }
+
+        internal static int executeScalar()
+        {
+            throw new NotImplementedException();
+        }
+
         //验证用户
 
         public static object executeScalar(string sql)

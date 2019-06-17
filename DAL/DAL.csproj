@@ -43,6 +43,13 @@
   <ItemGroup>
     <Compile Include="DBHlper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7565b6ff-7f79-4638-9722-4953f7adabfa}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
