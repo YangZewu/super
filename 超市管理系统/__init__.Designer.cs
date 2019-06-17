@@ -160,6 +160,7 @@
             this.Btn_Land.TabIndex = 11;
             this.Btn_Land.Text = "登录";
             this.Btn_Land.UseVisualStyleBackColor = true;
+            this.Btn_Land.Click += new System.EventHandler(this.Btn_Land_Click);
             // 
             // Btn_Close
             // 

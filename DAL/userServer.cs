@@ -12,7 +12,7 @@ namespace DAL
         public static int getUser(string userICno,string userPwd)
         {
             string sql = string.Format("select count(*) from userTables where userICno='{0}' and userPwd='{1}'",userICno,userPwd);
-            return (int)DBHelper.executeScalar();
+            return (int)DBHelper.executeScalar(sql);
         }
         //用户注册
         public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, string userBbir, string icStartTime, string icEndTime)

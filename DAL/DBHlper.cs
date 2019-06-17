@@ -16,7 +16,7 @@ namespace DAL
             get
             {
                 // 分析和处理数据库连接可能出现在不同状态
-                string connectionstring = "Data Source=112.74.60.134;Initial Catalog=Supermarket;User ID=sa password=yzw0219.";
+                string connectionstring = "Data Source=112.74.60.134;Initial Catalog=Supermarket;User ID=sa;password=yzw0219.";
 
                 if (connection == null)
                 {
@@ -37,10 +37,7 @@ namespace DAL
 
         }
 
-        internal static int executeScalar()
-        {
-            throw new NotImplementedException();
-        }
+
 
         //验证用户
 
