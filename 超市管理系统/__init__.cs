@@ -24,13 +24,14 @@ namespace 超市管理系统
             __Main__.ShowDialog();
             this.Close();
         }
-
+        //对验证码进行验证
         string checkCode;
         private void __init___Load(object sender, EventArgs e)
         {
             checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
             image_Code.Image = MyCode.CreateImage(checkCode);//实现验证码图片
         }
+        //登录验证
 
         private void Btn_Land_Click(object sender, EventArgs e)
         {
@@ -55,7 +56,7 @@ namespace 超市管理系统
                 }
             }
         }
-
+        //获取验证码
         private void Click_Code_Click(object sender, EventArgs e)
         {
             checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
