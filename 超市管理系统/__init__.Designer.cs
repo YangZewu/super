@@ -105,7 +105,7 @@
             // 
             this.image_Code.Location = new System.Drawing.Point(486, 209);
             this.image_Code.Name = "image_Code";
-            this.image_Code.Size = new System.Drawing.Size(68, 20);
+            this.image_Code.Size = new System.Drawing.Size(55, 20);
             this.image_Code.TabIndex = 6;
             this.image_Code.TabStop = false;
             // 
@@ -115,7 +115,7 @@
             this.Click_Code.BackColor = System.Drawing.Color.Transparent;
             this.Click_Code.Font = new System.Drawing.Font("宋体", 15F);
             this.Click_Code.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Click_Code.Location = new System.Drawing.Point(569, 209);
+            this.Click_Code.Location = new System.Drawing.Point(547, 209);
             this.Click_Code.Name = "Click_Code";
             this.Click_Code.Size = new System.Drawing.Size(109, 20);
             this.Click_Code.TabIndex = 7;
@@ -195,6 +195,7 @@
             this.Name = "__init__";
             this.Text = "__init__";
             this.TransparencyKey = System.Drawing.Color.Black;
+            this.Load += new System.EventHandler(this.@__init___Load);
             ((System.ComponentModel.ISupportInitialize)(this.image_Code)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

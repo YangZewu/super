@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.IO;
+using System.Drawing;
 
 
 namespace BLL
 {
-    class MyCode
+   public class MyCode
     {
-        private string GetRandomCode(int CodeCount)
+        public static string GetRandomCode(int CodeCount)
         {
             string allChar = "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,G,H,i,J,K,M,N,P,Q,R,S,T,U,W,X,Y,Z";
             string[] allCharArray = allChar.Split(',');
@@ -40,10 +39,11 @@ namespace BLL
             return RandomCode;
         }
 
-        private void CreateImage(string checkCode)
+        public static Bitmap CreateImage(string checkCode)
         {
+            
             int iwidth = (int)(checkCode.Length * 14);
-            System.Drawing.Bitmap image = new System.Drawing.Bitmap(iwidth, 21);
+            Bitmap image = new Bitmap(iwidth, 21);
             Graphics g = Graphics.FromImage(image);
             Font f = new System.Drawing.Font("Arial ", 10);
             Brush b = new System.Drawing.SolidBrush(Color.Black);
@@ -66,7 +66,7 @@ namespace BLL
             }
             System.IO.MemoryStream ms = new System.IO.MemoryStream();
             image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-            pictureBox1.Image = image;
+            return image;
         }
     }
 }
