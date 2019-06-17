@@ -120,6 +120,7 @@
             this.Click_Code.Size = new System.Drawing.Size(109, 20);
             this.Click_Code.TabIndex = 7;
             this.Click_Code.Text = "更换验证码";
+            this.Click_Code.Click += new System.EventHandler(this.Click_Code_Click);
             // 
             // label4
             // 

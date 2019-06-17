@@ -20,6 +20,8 @@ namespace 超市管理系统
 
         private void Btn_Close_Click(object sender, EventArgs e)
         {
+            __main__ __Main__ = new __main__();
+            __Main__.ShowDialog();
             this.Close();
         }
 
@@ -52,6 +54,12 @@ namespace 超市管理系统
                     MessageBox.Show("登录失败");
                 }
             }
+        }
+
+        private void Click_Code_Click(object sender, EventArgs e)
+        {
+            checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
+            image_Code.Image = MyCode.CreateImage(checkCode);//实现验证码图片
         }
     }
 }
