@@ -17,6 +17,7 @@ namespace DAL
         {
             string sql = string.Format("INSERT INTO admin(GoodName,Supplier,Stock)" +
                 " values('{0}','{1}','{2}')", GoodName, Supplier, Stock);
+            return (int)DBHelper.ExecuteNonQuery(sql);
         }
     }
 }
