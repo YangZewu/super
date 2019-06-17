@@ -16,5 +16,10 @@ namespace 超市管理系统
         {
             InitializeComponent();
         }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

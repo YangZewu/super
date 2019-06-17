@@ -89,5 +89,15 @@
   <ItemGroup>
     <None Include="Resources\登陆背景图.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{f2e829c3-98f8-4772-ad01-2552f7535c6f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{7565b6ff-7f79-4638-9722-4953f7adabfa}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
