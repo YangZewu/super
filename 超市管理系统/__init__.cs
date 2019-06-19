@@ -20,8 +20,7 @@ namespace 超市管理系统
 
         private void Btn_Close_Click(object sender, EventArgs e)
         {
-            __main__ __Main__ = new __main__();
-            __Main__.ShowDialog();
+           
             this.Close();
         }
 
@@ -47,6 +46,8 @@ namespace 超市管理系统
                 int a = userManag.getUser(icNo.Text, Pwd.Text);
                 if (a > 0)
                 {
+                    __main__ __Main__ = new __main__();
+                    __Main__.ShowDialog();
                     MessageBox.Show("登录成功");
                 }
                 else
