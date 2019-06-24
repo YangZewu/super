@@ -1,4 +1,6 @@
-﻿namespace 超市管理系统
+﻿using System.Windows.Forms;
+
+namespace 超市管理系统
 {
     partial class __init__
     {
@@ -201,6 +203,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.image_Code)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+            /*Form mainForm = new Form();
+            mainForm.AllowDrop = true;*/
 
         }
 
