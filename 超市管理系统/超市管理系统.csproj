@@ -103,9 +103,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\登陆背景图.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{f2e829c3-98f8-4772-ad01-2552f7535c6f}</Project>
       <Name>BLL</Name>
@@ -117,6 +114,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\images\image_2017年物联网2班.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\image_2017年物联网2班.png" />
+    <Content Include="Resources\登陆背景图.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
