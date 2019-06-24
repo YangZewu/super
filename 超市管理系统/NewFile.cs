@@ -21,7 +21,7 @@ namespace 超市管理系统
 
         private void NewFile_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Btn_Close_Click(object sender, EventArgs e)
