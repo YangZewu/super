@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
+using 超市管理系统;
 namespace 超市管理系统
 {
     public partial class NewFile : Form
@@ -32,6 +33,7 @@ namespace 超市管理系统
 
         private void Btn_Ok_Click(object sender, EventArgs e)
         {
+
             Nonull();
             Add();
         }
@@ -63,17 +65,52 @@ namespace 超市管理系统
         }
         public void Add()
         {
-            int i = userManag.regUser(Textbox_icNo.Text, textBox_Pwd.Text, TextBox_Tel.Text,
-                                        ".\\images\\" + Textbox_icNo.Text + ".jpg", Textbox_Name.Text, Time_Day.Value,
-                                        Time_StartDay.Value, Time_Exit.Value, TextBox_Email.Text, Textbox_address.Text, TextBox_PC.Text,
-                                        comboBox_sex.Text);
-            if (i > 0)
+            int icdev = DCHelper.dc_init(100, 115200);
+            if (icdev > 0)
             {
-                MessageBox.Show("注册成功！");
+                long snr = 0;
+                int dccard = DCHelper.dc_card(icdev, 0, ref snr);
+                if (dccard == 0)
+                {
+                    byte[] password = new byte[] { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
+                    int dckey = DCHelper.dc_load_key(icdev, 0, 1, password);
+                    if (dckey == 0)
+                    {
+                        int authkey = DCHelper.dc_authentication(icdev, 0, 1);
+                        if (authkey == 0)
+                        {
+                            int dcwrity = DCHelper.dc_write(icdev, 4, Textbox_icNo.Text);
+                            if (dcwrity == 0)
+                            {
+                                int i = userManag.regUser(Textbox_icNo.Text, textBox_Pwd.Text, TextBox_Tel.Text,
+                                                            ".\\images\\" + Textbox_icNo.Text + ".jpg", Textbox_Name.Text, Time_Day.Value,
+                                                            Time_StartDay.Value, Time_Exit.Value, TextBox_Email.Text, Textbox_address.Text, TextBox_PC.Text,
+                                                            comboBox_sex.Text);
+                                if (i > 0)
+                                {
+                                    Check();
+                                    DCHelper.dc_beep(icdev, 100);
+                                    MessageBox.Show("发卡成功！");
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("请正确放置卡！");
+                }
             }
             else
             {
-                MessageBox.Show("注册失败！");
+                MessageBox.Show("请检查设备！");
+            }
+        }
+        public void Check()
+        {
+            if (Textbox_Name.Text != textBox3.Text)
+            {
+                MessageBox.Show("两次姓名不一致！");
             }
         }
 

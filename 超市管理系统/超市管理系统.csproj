@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DCHelper.cs" />
     <Compile Include="NewFile.cs">
       <SubType>Form</SubType>
     </Compile>
