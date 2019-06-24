@@ -16,7 +16,7 @@ namespace 超市管理系统
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new __init__());
+            Application.Run(new NewFile());
         }
     }
 }

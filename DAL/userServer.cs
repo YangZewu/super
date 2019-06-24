@@ -15,11 +15,11 @@ namespace DAL
             return (int)DBHelper.executeScalar(sql);
         }
         //用户注册
-        public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, string userBbir, string icStartTime, string icEndTime)
+        public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, System.DateTime userBbir, System.DateTime icStartTime, System.DateTime icEndTime, string email,string address,string postcode,string sex)
         {
-            string sql = string.Format("INSERT INTO userTables(userICno, userPwd, userTel, userPhoto,userName,userBbir,icStartTime,icEndTime)" +
-                                             " VALUES('{0}', '{1}', '{2}', '{3}','{4}','{5}','{6}','{7}')",
-                                               userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime);
+            string sql = string.Format("INSERT INTO userTables(userICno, userPwd, userTel, userPhoto,userName,userBbir,icStartTime,icEndTime,email,address,postcode,sex)" +
+                                             " VALUES('{0}', '{1}', '{2}', '{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')",
+                                               userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime, email, address, postcode, sex);
             return (int)DBHelper.ExecuteNonQuery(sql);
         }
     }

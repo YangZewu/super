@@ -12,9 +12,10 @@ namespace BLL
         {
             return userServer.getUser(userICno,userPwd);
         }
-        public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, string userBbir, string icStartTime, string icEndTime)
+        public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, System.DateTime userBbir, System.DateTime icStartTime, System.DateTime icEndTime, string email, string address, string postcode, string sex)
         {
-            return userServer.regUser(userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime);
+            return userServer.regUser(userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime, email, address, postcode, sex);
+
         }
     }
 }
