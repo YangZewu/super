@@ -10,7 +10,7 @@ namespace 超市管理系统
     public class DCHelper
     {
         [DllImport("dcrf32.dll")]
-        public static extern int dc_init(int port, int baud);//初始化
+        public static extern int dc_init(int port, Int32 baud);//初始化
 
         [DllImport("dcrf32.dll")]
         public static extern int dc_beep(int icdev, int _Msec);//蜂鸣
