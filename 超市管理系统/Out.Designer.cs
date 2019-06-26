@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.TextBox_Tel = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Delect = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Btn_GetIC = new System.Windows.Forms.Button();
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
@@ -164,19 +164,20 @@
             this.TextBox_Tel.Size = new System.Drawing.Size(299, 25);
             this.TextBox_Tel.TabIndex = 31;
             // 
-            // button1
+            // Btn_Delect
             // 
-            this.button1.Font = new System.Drawing.Font("宋体", 9F);
-            this.button1.Location = new System.Drawing.Point(252, 448);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "注销";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_Delect.Font = new System.Drawing.Font("宋体", 9F);
+            this.Btn_Delect.Location = new System.Drawing.Point(238, 448);
+            this.Btn_Delect.Name = "Btn_Delect";
+            this.Btn_Delect.Size = new System.Drawing.Size(75, 40);
+            this.Btn_Delect.TabIndex = 35;
+            this.Btn_Delect.Text = "注销";
+            this.Btn_Delect.UseVisualStyleBackColor = true;
+            this.Btn_Delect.Click += new System.EventHandler(this.Btn_Delect_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(412, 448);
+            this.button2.Location = new System.Drawing.Point(393, 448);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 40);
             this.button2.TabIndex = 36;
@@ -230,7 +231,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Btn_GetIC);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Btn_Delect);
             this.Controls.Add(this.TextBox_DZ);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
@@ -266,7 +267,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TextBox_Tel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Delect;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Btn_GetIC;
         private Sunisoft.IrisSkin.SkinEngine skinEngine1;

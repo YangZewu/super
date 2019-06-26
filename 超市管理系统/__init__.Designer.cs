@@ -52,24 +52,27 @@ namespace 超市管理系统
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("宋体", 15F);
             this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(302, 153);
+            this.label1.Location = new System.Drawing.Point(403, 191);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.Size = new System.Drawing.Size(87, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "卡号：";
             // 
             // icNo
             // 
-            this.icNo.Location = new System.Drawing.Point(365, 153);
+            this.icNo.Location = new System.Drawing.Point(487, 191);
+            this.icNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.icNo.Name = "icNo";
-            this.icNo.Size = new System.Drawing.Size(115, 21);
+            this.icNo.Size = new System.Drawing.Size(152, 25);
             this.icNo.TabIndex = 1;
             // 
             // Pwd
             // 
-            this.Pwd.Location = new System.Drawing.Point(561, 152);
+            this.Pwd.Location = new System.Drawing.Point(748, 190);
+            this.Pwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pwd.Name = "Pwd";
-            this.Pwd.Size = new System.Drawing.Size(117, 21);
+            this.Pwd.Size = new System.Drawing.Size(155, 25);
             this.Pwd.TabIndex = 3;
             // 
             // label2
@@ -78,17 +81,19 @@ namespace 超市管理系统
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("宋体", 15F);
             this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(497, 152);
+            this.label2.Location = new System.Drawing.Point(663, 190);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(87, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "密码：";
             // 
             // Code
             // 
-            this.Code.Location = new System.Drawing.Point(365, 209);
+            this.Code.Location = new System.Drawing.Point(487, 261);
+            this.Code.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Code.Name = "Code";
-            this.Code.Size = new System.Drawing.Size(115, 21);
+            this.Code.Size = new System.Drawing.Size(152, 25);
             this.Code.TabIndex = 5;
             // 
             // label3
@@ -97,17 +102,19 @@ namespace 超市管理系统
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("宋体", 15F);
             this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(282, 210);
+            this.label3.Location = new System.Drawing.Point(376, 262);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 20);
+            this.label3.Size = new System.Drawing.Size(112, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "验证码：";
             // 
             // image_Code
             // 
-            this.image_Code.Location = new System.Drawing.Point(486, 209);
+            this.image_Code.Location = new System.Drawing.Point(648, 261);
+            this.image_Code.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.image_Code.Name = "image_Code";
-            this.image_Code.Size = new System.Drawing.Size(55, 20);
+            this.image_Code.Size = new System.Drawing.Size(73, 25);
             this.image_Code.TabIndex = 6;
             this.image_Code.TabStop = false;
             // 
@@ -117,9 +124,10 @@ namespace 超市管理系统
             this.Click_Code.BackColor = System.Drawing.Color.Transparent;
             this.Click_Code.Font = new System.Drawing.Font("宋体", 15F);
             this.Click_Code.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.Click_Code.Location = new System.Drawing.Point(547, 209);
+            this.Click_Code.Location = new System.Drawing.Point(729, 261);
+            this.Click_Code.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Click_Code.Name = "Click_Code";
-            this.Click_Code.Size = new System.Drawing.Size(109, 20);
+            this.Click_Code.Size = new System.Drawing.Size(137, 25);
             this.Click_Code.TabIndex = 7;
             this.Click_Code.Text = "更换验证码";
             this.Click_Code.Click += new System.EventHandler(this.Click_Code_Click);
@@ -129,9 +137,10 @@ namespace 超市管理系统
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(363, 244);
+            this.label4.Location = new System.Drawing.Point(484, 305);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "温馨提示：";
             // 
@@ -140,26 +149,30 @@ namespace 超市管理系统
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label5.Location = new System.Drawing.Point(434, 244);
+            this.label5.Location = new System.Drawing.Point(579, 305);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 12);
+            this.label5.Size = new System.Drawing.Size(292, 15);
             this.label5.TabIndex = 9;
             this.label5.Text = "先读卡后登录，验证码严格区分大小写！！";
             // 
             // Btn_GeticNo
             // 
-            this.Btn_GeticNo.Location = new System.Drawing.Point(365, 283);
+            this.Btn_GeticNo.Location = new System.Drawing.Point(487, 354);
+            this.Btn_GeticNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_GeticNo.Name = "Btn_GeticNo";
-            this.Btn_GeticNo.Size = new System.Drawing.Size(63, 31);
+            this.Btn_GeticNo.Size = new System.Drawing.Size(84, 39);
             this.Btn_GeticNo.TabIndex = 10;
             this.Btn_GeticNo.Text = "读卡";
             this.Btn_GeticNo.UseVisualStyleBackColor = true;
+            this.Btn_GeticNo.Click += new System.EventHandler(this.Btn_GeticNo_Click);
             // 
             // Btn_Land
             // 
-            this.Btn_Land.Location = new System.Drawing.Point(469, 283);
+            this.Btn_Land.Location = new System.Drawing.Point(625, 354);
+            this.Btn_Land.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Land.Name = "Btn_Land";
-            this.Btn_Land.Size = new System.Drawing.Size(63, 31);
+            this.Btn_Land.Size = new System.Drawing.Size(84, 39);
             this.Btn_Land.TabIndex = 11;
             this.Btn_Land.Text = "登录";
             this.Btn_Land.UseVisualStyleBackColor = true;
@@ -167,9 +180,10 @@ namespace 超市管理系统
             // 
             // Btn_Close
             // 
-            this.Btn_Close.Location = new System.Drawing.Point(573, 283);
+            this.Btn_Close.Location = new System.Drawing.Point(764, 354);
+            this.Btn_Close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_Close.Name = "Btn_Close";
-            this.Btn_Close.Size = new System.Drawing.Size(63, 31);
+            this.Btn_Close.Size = new System.Drawing.Size(84, 39);
             this.Btn_Close.TabIndex = 12;
             this.Btn_Close.Text = "关闭";
             this.Btn_Close.UseVisualStyleBackColor = true;
@@ -177,10 +191,10 @@ namespace 超市管理系统
             // 
             // __init__
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::超市管理系统.Properties.Resources.登陆背景图;
-            this.ClientSize = new System.Drawing.Size(734, 352);
+            this.ClientSize = new System.Drawing.Size(979, 440);
             this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.Btn_Land);
             this.Controls.Add(this.Btn_GeticNo);
@@ -195,7 +209,7 @@ namespace 超市管理系统
             this.Controls.Add(this.icNo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "__init__";
             this.Text = "__init__";
             this.TransparencyKey = System.Drawing.Color.Black;
@@ -203,8 +217,6 @@ namespace 超市管理系统
             ((System.ComponentModel.ISupportInitialize)(this.image_Code)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-            /*Form mainForm = new Form();
-            mainForm.AllowDrop = true;*/
 
         }
 

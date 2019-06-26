@@ -23,11 +23,20 @@ namespace DAL
                                                userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime, email, address, postcode, sex);
             return (int)DBHelper.ExecuteNonQuery(sql);
         }
+        //读取操作
         public static SqlDataReader getDataReader(string icno)
         {
             string sqlstr = String.Format("select userPwd,userName,userTel,userPhoto,address,icStartTime,integral from userTables where userICno='{0}'", icno);
             return DBHelper.executeReader(sqlstr);
 
         }
+        //删除用户信息，注销会员卡
+        public static object SQLDELECT(string icno)
+        {
+            string sqlstr = String.Format("DELETE FROM userTables WHERE userICno = {0}",icno);
+            return DBHelper.ExecuteNonQuery(sqlstr);
+
+        }
+
     }
 }

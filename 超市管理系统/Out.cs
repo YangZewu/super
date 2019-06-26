@@ -70,7 +70,7 @@ namespace 超市管理系统
                                 }
 
                                 MessageBox.Show("读卡成功", "提示", MessageBoxButtons.OK);
-                                DCHelper.dc_beep(icdev, 100);
+                               // DCHelper.dc_beep(icdev, 100);
                             }
                         }
                     }
@@ -85,6 +85,25 @@ namespace 超市管理系统
                 MessageBox.Show("请检查设备");
             }
         }
-    
+
+        private void Btn_Delect_Click(object sender, EventArgs e)
+        {
+            if (Textbox_icNo is null)
+            {
+                MessageBox.Show("请先读卡，然后再进行此操作！","错误提示",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (MessageBox.Show("请确认是否注销此卡 ，卡号：{0}", "注销提示", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    userManag.DELECT(Textbox_icNo.Text);
+                }
+               else
+                {
+                    this.Close();
+                }
+            }
+            
+        }
     }
 }

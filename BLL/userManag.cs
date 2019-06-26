@@ -22,5 +22,13 @@ namespace BLL
         {
             return userServer.getDataReader(icno);
         }
+
+        public static object DELECT(string icno)
+        {
+            return userServer.SQLDELECT(icno);
+        }
+
+        public static string icNo;
+        public static string Name;
     }
 }
