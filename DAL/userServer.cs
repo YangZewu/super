@@ -25,7 +25,7 @@ namespace DAL
         }
         public static SqlDataReader getDataReader(string icno)
         {
-            string sqlstr = String.Format("select userICno,userName,userTel,userPhoto,address from BikeInfo where icNo='{0}'", icno);
+            string sqlstr = String.Format("select userPwd,userName,userTel,userPhoto,address,icStartTime,integral from userTables where userICno='{0}'", icno);
             return DBHelper.executeReader(sqlstr);
 
         }

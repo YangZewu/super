@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 using DAL;
 namespace BLL
 {
@@ -16,6 +17,10 @@ namespace BLL
         {
             return userServer.regUser(userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime, email, address, postcode, sex);
 
+        }
+        public static SqlDataReader getDataReader(string icno)
+        {
+            return userServer.getDataReader(icno);
         }
     }
 }
