@@ -40,7 +40,6 @@
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于我们ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.images_L = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.TSSL_Name = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -48,9 +47,10 @@
             this.NowTime_NYR = new System.Windows.Forms.ToolStripStatusLabel();
             this.NowTime_HMS = new System.Windows.Forms.ToolStripStatusLabel();
             this.退出登陆ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.images_L = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.images_L)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.images_L)).BeginInit();
             this.SuspendLayout();
             // 
             // skinEngine1
@@ -85,6 +85,7 @@
             this.首页ToolStripMenuItem.Name = "首页ToolStripMenuItem";
             this.首页ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.首页ToolStripMenuItem.Text = "签到";
+            this.首页ToolStripMenuItem.Click += new System.EventHandler(this.首页ToolStripMenuItem_Click);
             // 
             // 个人信息ToolStripMenuItem
             // 
@@ -138,17 +139,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
-            // images_L
-            // 
-            this.images_L.Image = global::超市管理系统.Properties.Resources.image_2017年物联网2班;
-            this.images_L.Location = new System.Drawing.Point(16, 50);
-            this.images_L.Margin = new System.Windows.Forms.Padding(4);
-            this.images_L.Name = "images_L";
-            this.images_L.Size = new System.Drawing.Size(792, 178);
-            this.images_L.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.images_L.TabIndex = 1;
-            this.images_L.TabStop = false;
             // 
             // statusStrip1
             // 
@@ -204,6 +194,16 @@
             this.退出登陆ToolStripMenuItem.Text = "退出登陆";
             this.退出登陆ToolStripMenuItem.Click += new System.EventHandler(this.退出登陆ToolStripMenuItem_Click);
             // 
+            // images_L
+            // 
+            this.images_L.Location = new System.Drawing.Point(16, 50);
+            this.images_L.Margin = new System.Windows.Forms.Padding(4);
+            this.images_L.Name = "images_L";
+            this.images_L.Size = new System.Drawing.Size(792, 178);
+            this.images_L.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.images_L.TabIndex = 1;
+            this.images_L.TabStop = false;
+            // 
             // __main__
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -219,9 +219,9 @@
             this.Load += new System.EventHandler(this.@__main___Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.images_L)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.images_L)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

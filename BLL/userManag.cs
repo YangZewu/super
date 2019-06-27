@@ -28,6 +28,12 @@ namespace BLL
             return userServer.SQLDELECT(icno);
         }
 
+        public static int QDJF(string QD, int jf)
+        {
+
+            return userServer.QDJF(QD, jf);
+        }
+
         public static string icNo;
         public static string Name;
     }

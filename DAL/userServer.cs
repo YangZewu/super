@@ -7,20 +7,20 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-   public class userServer
+    public class userServer
     {
         //验证登录
-        public static int getUser(string userICno,string userPwd)
+        public static int getUser(string userICno, string userPwd)
         {
-            string sql = string.Format("select count(*) from userTables where userICno='{0}' and userPwd='{1}'",userICno,userPwd);
+            string sql = string.Format("select count(*) from userTables where userICno='{0}' and userPwd='{1}'", userICno, userPwd);
             return (int)DBHelper.executeScalar(sql);
         }
         //用户注册
-        public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, System.DateTime userBbir, System.DateTime icStartTime, System.DateTime icEndTime, string email,string address,string postcode,string sex)
+        public static int regUser(string userICno, string userPwd, string userTel, string userPhoto, string userName, System.DateTime userBbir, System.DateTime icStartTime, System.DateTime icEndTime, string email, string address, string postcode, string sex)
         {
             string sql = string.Format("INSERT INTO userTables(userICno, userPwd, userTel, userPhoto,userName,userBbir,icStartTime,icEndTime,email,address,postcode,sex)" +
                                              " VALUES('{0}', '{1}', '{2}', '{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')",
-                                               userICno,userPwd,userTel,userPhoto,userName,userBbir,icStartTime,icEndTime, email, address, postcode, sex);
+                                               userICno, userPwd, userTel, userPhoto, userName, userBbir, icStartTime, icEndTime, email, address, postcode, sex);
             return (int)DBHelper.ExecuteNonQuery(sql);
         }
         //读取操作
@@ -33,9 +33,17 @@ namespace DAL
         //删除用户信息，注销会员卡
         public static object SQLDELECT(string icno)
         {
-            string sqlstr = String.Format("DELETE FROM userTables WHERE userICno = {0}",icno);
+            string sqlstr = String.Format("DELETE FROM userTables WHERE userICno = {0}", icno);
             return DBHelper.ExecuteNonQuery(sqlstr);
 
+        }
+        //插入签到跟积分
+        public static int QDJF(string QD, int jf)
+        {
+            string sql = string.Format("INSERT INTO userTables(QDTime, JF)" +
+                                             " VALUES('{0}', '{1})",
+                                               QD, jf);
+            return (int)DBHelper.ExecuteNonQuery(sql);
         }
 
     }

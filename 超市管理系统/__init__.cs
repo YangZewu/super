@@ -47,7 +47,6 @@ namespace 超市管理系统
                     checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
                     image_Code.Image = MyCode.CreateImage(checkCode);//实现验证码图片
                     Code.Text = "";
-
                 }
                 else
                 {
@@ -58,12 +57,20 @@ namespace 超市管理系统
                         userManag.icNo = icNo.Text;
                         userManag.Name = name;
                         __main__ __Main__ = new __main__();
-                        __Main__.ShowDialog();
-                       
+                        __Main__.Show();
+                        Hide();
+                        Code.Text = "";
+                        icNo.Text = ""; Pwd.Text = "";
+                        checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
+                        image_Code.Image = MyCode.CreateImage(checkCode);
                     }
                     else
                     {
                         MessageBox.Show("登录失败");
+                        Code.Text = "";
+                        icNo.Text = ""; Pwd.Text = "";
+                        checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
+                        image_Code.Image = MyCode.CreateImage(checkCode);
                     }
                 }
             }
@@ -106,6 +113,7 @@ namespace 超市管理系统
                                 }
 
                                 MessageBox.Show("读卡成功", "提示", MessageBoxButtons.OK);
+                                Lin.Close();
                                 //DCHelper.dc_beep(icdev, 100);
                             }
                         }
