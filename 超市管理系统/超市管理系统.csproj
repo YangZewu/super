@@ -202,6 +202,24 @@
     <None Include="bin\Debug\images\签到.jpg" />
     <None Include="bin\Debug\images\轮播.jpg" />
     <None Include="bin\Debug\images\D8.jpg" />
+    <None Include="bin\Debug\images\话费10.jpg" />
+    <None Include="bin\Debug\images\话费15.jpg" />
+    <None Include="bin\Debug\images\20.jpg" />
+    <None Include="bin\Debug\images\话费.jpg" />
+    <None Include="bin\Debug\images\话费50.jpg" />
+    <None Include="bin\Debug\images\话费100.jpg" />
+    <None Include="bin\Debug\images\KFC100.jpg" />
+    <None Include="bin\Debug\images\当当100.jpg" />
+    <None Include="bin\Debug\images\严选100.jpg" />
+    <None Include="bin\Debug\images\京东50.jpg" />
+    <None Include="bin\Debug\images\京东100.jpg" />
+    <None Include="bin\Debug\images\京东200.jpg" />
+    <None Include="bin\Debug\images\腾讯月卡.jpg" />
+    <None Include="bin\Debug\images\腾讯季卡.jpg" />
+    <None Include="bin\Debug\images\腾讯年卡.jpg" />
+    <None Include="bin\Debug\images\优酷月卡.jpg" />
+    <None Include="bin\Debug\images\优酷季卡.jpg" />
+    <None Include="bin\Debug\images\优酷年卡.jpg" />
     <Content Include="Resources\image_2017年物联网2班.png" />
     <Content Include="Resources\登陆背景图.jpg" />
   </ItemGroup>

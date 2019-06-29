@@ -23,5 +23,12 @@ namespace 超市管理系统
         {
 
         }
+
+        private void Ben_close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
     }
 }
