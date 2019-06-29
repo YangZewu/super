@@ -65,15 +65,15 @@ namespace 超市管理系统
         {
             if (ZT.Text != "离线中")
             {
-                if (userManag.icNo != "20193526093527")//后面需要改为区分会员跟管理员的权限
+                if (userManag.icNo != "20193029023017s")//后面需要改为区分会员跟管理员的权限
                 {
-                    MessageBox.Show("您没有权限访问,如需办卡請联系管理员办理！", "权限提示", MessageBoxButtons.OK);
+                    MessageBox.Show("您没有权限访问,如需办卡請联系管理员办理！", "权限", MessageBoxButtons.OK);
                 }
                 else
                 {
                     NewFile newFile = new NewFile();
                     newFile.Show();
-                    
+
                 }
             }
             else

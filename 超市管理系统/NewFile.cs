@@ -30,12 +30,18 @@ namespace 超市管理系统
         {
             this.Close();
         }
-
+        bool zt;
         private void Btn_Ok_Click(object sender, EventArgs e)
         {
-
             Nonull();
-            Add();
+            if (zt == true)
+            {
+                if (Check() == true)
+                {
+                    Add();
+                }
+            }
+           
         }
 
         private void Btn_Cloose_Click(object sender, EventArgs e)
@@ -53,15 +59,23 @@ namespace 超市管理系统
                 File.Copy(open.FileName, System.AppDomain.CurrentDomain.BaseDirectory + "\\images\\" + Textbox_icNo.Text + ".jpg", true);
             }
         }
-        public void Nonull()
+        public bool Nonull()
         {
-            if (textBox_Pwd.Text == "" && TextBox_Tel.Text == "" &&
-                ".\\images\\" + Textbox_icNo.Text + ".jpg" == "" && Textbox_Name.Text == "" &&
-                TextBox_Email.Text == "" && Textbox_address.Text == "" && TextBox_PC.Text == "" &&
+            
+            if (textBox_Pwd.Text == "" || TextBox_Tel.Text == "" ||
+                ".\\images\\" + Textbox_icNo.Text + ".jpg" == "" || Textbox_Name.Text == "" ||
+                TextBox_Email.Text == "" || Textbox_address.Text == "" || TextBox_PC.Text == "" ||
                 comboBox_sex.Text == "")
             {
                 MessageBox.Show("注册信息不能为空");
+                 zt=false;
+               
             }
+            else
+            {
+                zt = true;
+            }
+            return zt;
         }
         public void Add()
         {
@@ -88,9 +102,11 @@ namespace 超市管理系统
                                                             comboBox_sex.Text);
                                 if (i > 0)
                                 {
-                                    Check();
-                                    DCHelper.dc_beep(icdev, 100);
-                                    MessageBox.Show("发卡成功！");
+                                   
+                                        DCHelper.dc_beep(icdev, 100);
+                                        MessageBox.Show("发卡成功！");
+                                        Close();
+                                    
                                 }
                             }
                         }
@@ -106,11 +122,16 @@ namespace 超市管理系统
                 MessageBox.Show("请检查设备！");
             }
         }
-        public void Check()
+        public bool Check()
         {
             if (Textbox_Name.Text != textBox3.Text)
             {
                 MessageBox.Show("两次姓名不一致！");
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
 

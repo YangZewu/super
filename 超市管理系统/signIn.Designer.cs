@@ -101,16 +101,16 @@
             this.QDZT.Name = "QDZT";
             this.QDZT.Size = new System.Drawing.Size(69, 20);
             this.QDZT.TabIndex = 4;
-            this.QDZT.Text = "已签到";
+            this.QDZT.Text = "未签到";
             // 
             // JF
             // 
             this.JF.AutoSize = true;
             this.JF.Location = new System.Drawing.Point(466, 180);
             this.JF.Name = "JF";
-            this.JF.Size = new System.Drawing.Size(23, 15);
+            this.JF.Size = new System.Drawing.Size(15, 15);
             this.JF.TabIndex = 5;
-            this.JF.Text = "05";
+            this.JF.Text = "0";
             // 
             // label7
             // 

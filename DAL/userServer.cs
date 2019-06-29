@@ -26,7 +26,7 @@ namespace DAL
         //读取操作
         public static SqlDataReader getDataReader(string icno)
         {
-            string sqlstr = String.Format("select userPwd,userName,userTel,userPhoto,address,icStartTime,integral from userTables where userICno='{0}'", icno);
+            string sqlstr = String.Format("select userPwd,userName,userTel,userPhoto,address,icStartTime,integral,JF,QDTime from userTables where userICno='{0}'", icno);
             return DBHelper.executeReader(sqlstr);
 
         }
@@ -37,14 +37,12 @@ namespace DAL
             return DBHelper.ExecuteNonQuery(sqlstr);
 
         }
-        //插入签到跟积分
-        public static int QDJF(string QD, int jf)
-        {
-            string sql = string.Format("INSERT INTO userTables(QDTime, JF)" +
-                                             " VALUES('{0}', '{1})",
-                                               QD, jf);
-            return (int)DBHelper.ExecuteNonQuery(sql);
-        }
 
+
+        public static object XGQDJF(string QD, int jf, string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET QDTime = '{0}',JF={1} WHERE userICno = '{2}'", QD,jf,icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
     }
 }

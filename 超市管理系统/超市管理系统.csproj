@@ -51,6 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DCHelper.cs" />
+    <Compile Include="My_information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_information.Designer.cs">
+      <DependentUpon>My_information.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewFile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="__main__.Designer.cs">
       <DependentUpon>__main__.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="My_information.resx">
+      <DependentUpon>My_information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewFile.resx">
       <DependentUpon>NewFile.cs</DependentUpon>
     </EmbeddedResource>
