@@ -32,8 +32,27 @@ namespace BLL
             
             return userServer.XGQDJF(QD,jf,icno);
         }
-
-        public static string icNo;
+        public static object CZJF(int ye, int jf, string icno)
+        {
+            return userServer.CZJF(ye,jf,icno);
+        }
+        public static SqlDataReader getJF(string icno)
+        {
+            return userServer.getJF(icno);
+        }
+        public static object CZYE(int ye, string icno)
+        {
+            return userServer.CZYE(ye,icno);
+        }
+        public static object XGMM(string pwd, string icno)
+        {
+            return userServer.XGMM(pwd,icno);
+        }
+        public static object XGXX(string userTel, string userPhoto, string userName, System.DateTime userBbir, string email, string address, string postcode, string sex, string icno)
+        {
+            return userServer.XGXX(userTel, userPhoto, userName, userBbir, email, address, postcode, sex,icno);
+        }
+        public static string icNo= "20193029023017";
         public static string Name;
     }
 }

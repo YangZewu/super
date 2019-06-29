@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL;
-
+using System.Data.SqlClient;
 namespace 超市管理系统
 {
     public partial class WJMM : Form
@@ -19,9 +19,16 @@ namespace 超市管理系统
             skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             skinEngine1.SkinFile = Application.StartupPath + "//DeepCyan.ssk";
         }
+        SqlDataReader Lin;
         string checkCode;
         private void WJMM_Load(object sender, EventArgs e)
         {
+            Lin = userManag.getJF(userManag.icNo);
+            while (Lin.Read())
+            {
+                Get_label_Name.Text = Lin["userName"].ToString();
+            }
+            Lin.Close();
             checkCode = MyCode.GetRandomCode(4);//获取4个随机的数字或字母
             image_Code.Image = MyCode.CreateImage(checkCode);//实现验证码图片
         }
@@ -38,6 +45,17 @@ namespace 超市管理系统
             else
             {
                 //验证成功，修改密码
+                int i = (int)userManag.XGMM(Pwd.Text, userManag.icNo);
+                if (i > 0)
+                {
+                    MessageBox.Show("修改成功！");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("修改失败！");
+                    this.Close();
+                }
             }
         }
 

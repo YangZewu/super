@@ -26,7 +26,7 @@ namespace DAL
         //读取操作
         public static SqlDataReader getDataReader(string icno)
         {
-            string sqlstr = String.Format("select userPwd,userName,userTel,userPhoto,address,icStartTime,integral,JF,QDTime from userTables where userICno='{0}'", icno);
+            string sqlstr = String.Format("select userPwd,postcode,userName,email,sex,userTel,userPhoto,address,icStartTime,userBbir,integral,JF,QDTime from userTables where userICno='{0}'", icno);
             return DBHelper.executeReader(sqlstr);
 
         }
@@ -42,6 +42,33 @@ namespace DAL
         public static object XGQDJF(string QD, int jf, string icno)
         {
             string sql = String.Format("UPDATE userTables SET QDTime = '{0}',JF={1} WHERE userICno = '{2}'", QD,jf,icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
+        public static object CZJF(int ye, int jf, string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET JF = JF+{0},YE=YE-{1} WHERE userICno = '{2}'",  jf,ye,icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
+        public static SqlDataReader getJF(string icno)
+        {
+            string sqlstr = String.Format("select userName,JF,YE from userTables where userICno='{0}'", icno);
+            return DBHelper.executeReader(sqlstr);
+
+        }
+        public static object CZYE(int ye, string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET YE=YE+{0} WHERE userICno = '{1}'", ye, icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
+        public static object XGMM(string pwd, string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET userPwd='{0}' WHERE userICno = '{1}'", pwd, icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
+        public static object XGXX(string userTel, string userPhoto, string userName, System.DateTime userBbir, string email, string address, string postcode, string sex,string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET userTel='{0}',userPhoto='{1}',userName='{2}'," +
+                "userBbir='{3}',email='{4}',address='{5}',postcode='{6}',sex='{7}' WHERE userICno = '{8}'", userTel, userPhoto, userName, userBbir, email, address, postcode, sex,icno);
             return DBHelper.ExecuteNonQuery(sql);
         }
     }
