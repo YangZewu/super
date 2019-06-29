@@ -127,5 +127,22 @@ namespace 超市管理系统
                 init__.Show();
             }
         }
+
+        private void 关于我们ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ZT.Text != "离线中")
+            {
+                Personal_Center _Center = new Personal_Center();
+                _Center.Show();
+            }
+            else
+            {
+                MessageBox.Show("您当前状态离线中，请先登陆！！");
+                Close();
+                __init__ init__ = new __init__();
+                init__.Show();
+            }
+
+        }
     }
 }

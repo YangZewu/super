@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace 超市管理系统
 {
-    public partial class My_information : Form
+    public partial class integral : Form
     {
-        public My_information()
+        public integral()
         {
             InitializeComponent();
             skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             skinEngine1.SkinFile = Application.StartupPath + "//DeepCyan.ssk";
         }
 
-        private void My_information_Load(object sender, EventArgs e)
+        private void Integral_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

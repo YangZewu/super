@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace 超市管理系统
 {
-    public partial class My_information : Form
+    public partial class Personal_Center : Form
     {
-        public My_information()
+        public Personal_Center()
         {
             InitializeComponent();
             skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             skinEngine1.SkinFile = Application.StartupPath + "//DeepCyan.ssk";
         }
 
-        private void My_information_Load(object sender, EventArgs e)
+        private void Personal_Center_Load(object sender, EventArgs e)
         {
 
         }

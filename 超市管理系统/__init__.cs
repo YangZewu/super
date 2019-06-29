@@ -128,5 +128,11 @@ namespace 超市管理系统
                 MessageBox.Show("请检查设备");
             }
         }
+
+        private void Label_WJMM_Click(object sender, EventArgs e)
+        {
+            WJMM wJMM = new WJMM();
+            wJMM.Show();
+        }
     }
 }

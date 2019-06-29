@@ -43,6 +43,7 @@ namespace 超市管理系统
             this.Btn_GeticNo = new System.Windows.Forms.Button();
             this.Btn_Land = new System.Windows.Forms.Button();
             this.Btn_Close = new System.Windows.Forms.Button();
+            this.Label_WJMM = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.image_Code)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@ namespace 超市管理系统
             // icNo
             // 
             this.icNo.Location = new System.Drawing.Point(487, 191);
-            this.icNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.icNo.Margin = new System.Windows.Forms.Padding(4);
             this.icNo.Name = "icNo";
             this.icNo.Size = new System.Drawing.Size(152, 25);
             this.icNo.TabIndex = 1;
@@ -70,7 +71,7 @@ namespace 超市管理系统
             // Pwd
             // 
             this.Pwd.Location = new System.Drawing.Point(748, 190);
-            this.Pwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pwd.Margin = new System.Windows.Forms.Padding(4);
             this.Pwd.Name = "Pwd";
             this.Pwd.Size = new System.Drawing.Size(155, 25);
             this.Pwd.TabIndex = 3;
@@ -91,7 +92,7 @@ namespace 超市管理系统
             // Code
             // 
             this.Code.Location = new System.Drawing.Point(487, 261);
-            this.Code.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Code.Margin = new System.Windows.Forms.Padding(4);
             this.Code.Name = "Code";
             this.Code.Size = new System.Drawing.Size(152, 25);
             this.Code.TabIndex = 5;
@@ -112,7 +113,7 @@ namespace 超市管理系统
             // image_Code
             // 
             this.image_Code.Location = new System.Drawing.Point(648, 261);
-            this.image_Code.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.image_Code.Margin = new System.Windows.Forms.Padding(4);
             this.image_Code.Name = "image_Code";
             this.image_Code.Size = new System.Drawing.Size(73, 25);
             this.image_Code.TabIndex = 6;
@@ -159,7 +160,7 @@ namespace 超市管理系统
             // Btn_GeticNo
             // 
             this.Btn_GeticNo.Location = new System.Drawing.Point(487, 354);
-            this.Btn_GeticNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_GeticNo.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_GeticNo.Name = "Btn_GeticNo";
             this.Btn_GeticNo.Size = new System.Drawing.Size(84, 39);
             this.Btn_GeticNo.TabIndex = 10;
@@ -170,7 +171,7 @@ namespace 超市管理系统
             // Btn_Land
             // 
             this.Btn_Land.Location = new System.Drawing.Point(625, 354);
-            this.Btn_Land.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Land.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Land.Name = "Btn_Land";
             this.Btn_Land.Size = new System.Drawing.Size(84, 39);
             this.Btn_Land.TabIndex = 11;
@@ -181,7 +182,7 @@ namespace 超市管理系统
             // Btn_Close
             // 
             this.Btn_Close.Location = new System.Drawing.Point(764, 354);
-            this.Btn_Close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Btn_Close.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Close.Name = "Btn_Close";
             this.Btn_Close.Size = new System.Drawing.Size(84, 39);
             this.Btn_Close.TabIndex = 12;
@@ -189,12 +190,25 @@ namespace 超市管理系统
             this.Btn_Close.UseVisualStyleBackColor = true;
             this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
+            // Label_WJMM
+            // 
+            this.Label_WJMM.AutoSize = true;
+            this.Label_WJMM.BackColor = System.Drawing.Color.Transparent;
+            this.Label_WJMM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Label_WJMM.Location = new System.Drawing.Point(790, 229);
+            this.Label_WJMM.Name = "Label_WJMM";
+            this.Label_WJMM.Size = new System.Drawing.Size(127, 15);
+            this.Label_WJMM.TabIndex = 13;
+            this.Label_WJMM.Text = "忘记密码請点这里";
+            this.Label_WJMM.Click += new System.EventHandler(this.Label_WJMM_Click);
+            // 
             // __init__
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::超市管理系统.Properties.Resources.登陆背景图;
             this.ClientSize = new System.Drawing.Size(979, 440);
+            this.Controls.Add(this.Label_WJMM);
             this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.Btn_Land);
             this.Controls.Add(this.Btn_GeticNo);
@@ -235,5 +249,6 @@ namespace 超市管理系统
         private System.Windows.Forms.Button Btn_GeticNo;
         private System.Windows.Forms.Button Btn_Land;
         private System.Windows.Forms.Button Btn_Close;
+        private Label Label_WJMM;
     }
 }

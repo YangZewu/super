@@ -50,7 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CZYE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CZYE.Designer.cs">
+      <DependentUpon>CZYE.cs</DependentUpon>
+    </Compile>
     <Compile Include="DCHelper.cs" />
+    <Compile Include="integral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="integral.Designer.cs">
+      <DependentUpon>integral.cs</DependentUpon>
+    </Compile>
     <Compile Include="My_information.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     <Compile Include="Out.Designer.cs">
       <DependentUpon>Out.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personal Center.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal Center.Designer.cs">
+      <DependentUpon>Personal Center.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="signIn.cs">
@@ -76,6 +94,24 @@
     </Compile>
     <Compile Include="signIn.Designer.cs">
       <DependentUpon>signIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supermarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supermarket.Designer.cs">
+      <DependentUpon>Supermarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WJMM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WJMM.Designer.cs">
+      <DependentUpon>WJMM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGXX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGXX.Designer.cs">
+      <DependentUpon>XGXX.cs</DependentUpon>
     </Compile>
     <Compile Include="__init__.cs">
       <SubType>Form</SubType>
@@ -89,6 +125,12 @@
     <Compile Include="__main__.Designer.cs">
       <DependentUpon>__main__.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CZYE.resx">
+      <DependentUpon>CZYE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="integral.resx">
+      <DependentUpon>integral.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My_information.resx">
       <DependentUpon>My_information.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Out.resx">
       <DependentUpon>Out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal Center.resx">
+      <DependentUpon>Personal Center.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,6 +155,15 @@
     </Compile>
     <EmbeddedResource Include="signIn.resx">
       <DependentUpon>signIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supermarket.resx">
+      <DependentUpon>Supermarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WJMM.resx">
+      <DependentUpon>WJMM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XGXX.resx">
+      <DependentUpon>XGXX.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="__init__.resx">
       <DependentUpon>__init__.cs</DependentUpon>
@@ -147,6 +201,7 @@
   <ItemGroup>
     <None Include="bin\Debug\images\签到.jpg" />
     <None Include="bin\Debug\images\轮播.jpg" />
+    <None Include="bin\Debug\images\D8.jpg" />
     <Content Include="Resources\image_2017年物联网2班.png" />
     <Content Include="Resources\登陆背景图.jpg" />
   </ItemGroup>

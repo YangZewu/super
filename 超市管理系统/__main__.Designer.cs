@@ -39,6 +39,7 @@
             this.关于我们ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于我们ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出登陆ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.TSSL_Name = new System.Windows.Forms.ToolStripStatusLabel();
@@ -46,8 +47,9 @@
             this.ZT = new System.Windows.Forms.ToolStripStatusLabel();
             this.NowTime_NYR = new System.Windows.Forms.ToolStripStatusLabel();
             this.NowTime_HMS = new System.Windows.Forms.ToolStripStatusLabel();
-            this.退出登陆ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.images_L = new System.Windows.Forms.PictureBox();
+            this.查看个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.images_L)).BeginInit();
@@ -89,6 +91,9 @@
             // 
             // 个人信息ToolStripMenuItem
             // 
+            this.个人信息ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.查看个人信息ToolStripMenuItem,
+            this.修改个人信息ToolStripMenuItem});
             this.个人信息ToolStripMenuItem.Name = "个人信息ToolStripMenuItem";
             this.个人信息ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.个人信息ToolStripMenuItem.Text = "个人信息";
@@ -121,6 +126,7 @@
             this.关于我们ToolStripMenuItem.Name = "关于我们ToolStripMenuItem";
             this.关于我们ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.关于我们ToolStripMenuItem.Text = "个人中心";
+            this.关于我们ToolStripMenuItem.Click += new System.EventHandler(this.关于我们ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
@@ -133,6 +139,13 @@
             this.关于我们ToolStripMenuItem1.Name = "关于我们ToolStripMenuItem1";
             this.关于我们ToolStripMenuItem1.Size = new System.Drawing.Size(83, 24);
             this.关于我们ToolStripMenuItem1.Text = "关于我们";
+            // 
+            // 退出登陆ToolStripMenuItem
+            // 
+            this.退出登陆ToolStripMenuItem.Name = "退出登陆ToolStripMenuItem";
+            this.退出登陆ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.退出登陆ToolStripMenuItem.Text = "退出登陆";
+            this.退出登陆ToolStripMenuItem.Click += new System.EventHandler(this.退出登陆ToolStripMenuItem_Click);
             // 
             // timer1
             // 
@@ -150,7 +163,7 @@
             this.NowTime_NYR,
             this.NowTime_HMS});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 532);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 347);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(824, 26);
             this.statusStrip1.TabIndex = 2;
@@ -187,13 +200,6 @@
             this.NowTime_HMS.Size = new System.Drawing.Size(49, 20);
             this.NowTime_HMS.Text = "21:19";
             // 
-            // 退出登陆ToolStripMenuItem
-            // 
-            this.退出登陆ToolStripMenuItem.Name = "退出登陆ToolStripMenuItem";
-            this.退出登陆ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.退出登陆ToolStripMenuItem.Text = "退出登陆";
-            this.退出登陆ToolStripMenuItem.Click += new System.EventHandler(this.退出登陆ToolStripMenuItem_Click);
-            // 
             // images_L
             // 
             this.images_L.Location = new System.Drawing.Point(16, 50);
@@ -204,11 +210,23 @@
             this.images_L.TabIndex = 1;
             this.images_L.TabStop = false;
             // 
+            // 查看个人信息ToolStripMenuItem
+            // 
+            this.查看个人信息ToolStripMenuItem.Name = "查看个人信息ToolStripMenuItem";
+            this.查看个人信息ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.查看个人信息ToolStripMenuItem.Text = "查看个人信息";
+            // 
+            // 修改个人信息ToolStripMenuItem
+            // 
+            this.修改个人信息ToolStripMenuItem.Name = "修改个人信息ToolStripMenuItem";
+            this.修改个人信息ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.修改个人信息ToolStripMenuItem.Text = "修改个人信息";
+            // 
             // __main__
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 558);
+            this.ClientSize = new System.Drawing.Size(824, 373);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.images_L);
             this.Controls.Add(this.menuStrip1);
@@ -248,5 +266,7 @@
         private System.Windows.Forms.ToolStripStatusLabel NowTime_NYR;
         private System.Windows.Forms.ToolStripStatusLabel NowTime_HMS;
         private System.Windows.Forms.ToolStripMenuItem 退出登陆ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 查看个人信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 修改个人信息ToolStripMenuItem;
     }
 }
