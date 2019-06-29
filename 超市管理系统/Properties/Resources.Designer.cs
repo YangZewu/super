@@ -73,6 +73,16 @@ namespace 超市管理系统.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap curved_arrow_266px_1158892_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("curved_arrow_266px_1158892_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap D8 {
             get {
                 object obj = ResourceManager.GetObject("D8", resourceCulture);

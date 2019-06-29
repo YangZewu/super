@@ -55,21 +55,21 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.image_Head);
-            this.groupBox2.Location = new System.Drawing.Point(217, 89);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(289, 111);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(139, 133);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.groupBox2.Size = new System.Drawing.Size(185, 166);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "图片管理";
             // 
             // image_Head
             // 
-            this.image_Head.Location = new System.Drawing.Point(16, 22);
-            this.image_Head.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.image_Head.Location = new System.Drawing.Point(21, 28);
+            this.image_Head.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.image_Head.Name = "image_Head";
-            this.image_Head.Size = new System.Drawing.Size(113, 98);
+            this.image_Head.Size = new System.Drawing.Size(151, 122);
             this.image_Head.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image_Head.TabIndex = 0;
             this.image_Head.TabStop = false;
@@ -78,10 +78,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F);
-            this.label3.Location = new System.Drawing.Point(44, 141);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(59, 176);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
+            this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 25;
             this.label3.Text = "姓名：";
             // 
@@ -89,10 +89,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 12F);
-            this.label2.Location = new System.Drawing.Point(44, 90);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(59, 112);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 22;
             this.label2.Text = "卡号：";
             // 
@@ -100,10 +100,10 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("宋体", 12F);
-            this.label16.Location = new System.Drawing.Point(14, 293);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Location = new System.Drawing.Point(19, 366);
+            this.label16.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 16);
+            this.label16.Size = new System.Drawing.Size(109, 20);
             this.label16.TabIndex = 50;
             this.label16.Text = "电子邮箱：";
             // 
@@ -111,10 +111,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F);
-            this.label4.Location = new System.Drawing.Point(14, 238);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(19, 298);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 16);
+            this.label4.Size = new System.Drawing.Size(109, 20);
             this.label4.TabIndex = 47;
             this.label4.Text = "出生年月：";
             // 
@@ -122,10 +122,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 12F);
-            this.label6.Location = new System.Drawing.Point(231, 293);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(308, 366);
+            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 16);
+            this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 46;
             this.label6.Text = "邮编：";
             // 
@@ -133,10 +133,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 12F);
-            this.label5.Location = new System.Drawing.Point(44, 196);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(59, 245);
+            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 16);
+            this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 44;
             this.label5.Text = "性别：";
             // 
@@ -144,10 +144,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("宋体", 12F);
-            this.label13.Location = new System.Drawing.Point(14, 396);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(19, 495);
+            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 16);
+            this.label13.Size = new System.Drawing.Size(109, 20);
             this.label13.TabIndex = 40;
             this.label13.Text = "详细地址：";
             // 
@@ -155,10 +155,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("宋体", 12F);
-            this.label14.Location = new System.Drawing.Point(14, 346);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(19, 432);
+            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 16);
+            this.label14.Size = new System.Drawing.Size(109, 20);
             this.label14.TabIndex = 39;
             this.label14.Text = "手机号码：";
             // 
@@ -175,10 +175,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 20F);
-            this.label1.Location = new System.Drawing.Point(162, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(173, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 27);
+            this.label1.Size = new System.Drawing.Size(151, 34);
             this.label1.TabIndex = 54;
             this.label1.Text = "个人信息";
             // 
@@ -186,10 +185,9 @@
             // 
             this.Label_icNo.AutoSize = true;
             this.Label_icNo.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_icNo.Location = new System.Drawing.Point(91, 89);
-            this.Label_icNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_icNo.Location = new System.Drawing.Point(121, 111);
             this.Label_icNo.Name = "Label_icNo";
-            this.Label_icNo.Size = new System.Drawing.Size(104, 16);
+            this.Label_icNo.Size = new System.Drawing.Size(129, 20);
             this.Label_icNo.TabIndex = 55;
             this.Label_icNo.Text = "201906292225";
             // 
@@ -197,10 +195,9 @@
             // 
             this.Label_sex.AutoSize = true;
             this.Label_sex.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_sex.Location = new System.Drawing.Point(89, 196);
-            this.Label_sex.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_sex.Location = new System.Drawing.Point(119, 245);
             this.Label_sex.Name = "Label_sex";
-            this.Label_sex.Size = new System.Drawing.Size(40, 16);
+            this.Label_sex.Size = new System.Drawing.Size(49, 20);
             this.Label_sex.TabIndex = 56;
             this.Label_sex.Text = "先生";
             // 
@@ -208,10 +205,9 @@
             // 
             this.Label_Name.AutoSize = true;
             this.Label_Name.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_Name.Location = new System.Drawing.Point(89, 141);
-            this.Label_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_Name.Location = new System.Drawing.Point(119, 176);
             this.Label_Name.Name = "Label_Name";
-            this.Label_Name.Size = new System.Drawing.Size(40, 16);
+            this.Label_Name.Size = new System.Drawing.Size(49, 20);
             this.Label_Name.TabIndex = 57;
             this.Label_Name.Text = "XLin";
             // 
@@ -219,10 +215,9 @@
             // 
             this.Label_CSNY.AutoSize = true;
             this.Label_CSNY.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_CSNY.Location = new System.Drawing.Point(91, 238);
-            this.Label_CSNY.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_CSNY.Location = new System.Drawing.Point(121, 298);
             this.Label_CSNY.Name = "Label_CSNY";
-            this.Label_CSNY.Size = new System.Drawing.Size(120, 16);
+            this.Label_CSNY.Size = new System.Drawing.Size(149, 20);
             this.Label_CSNY.TabIndex = 58;
             this.Label_CSNY.Text = "1998年05月21日";
             // 
@@ -230,10 +225,9 @@
             // 
             this.Label_email.AutoSize = true;
             this.Label_email.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_email.Location = new System.Drawing.Point(91, 293);
-            this.Label_email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_email.Location = new System.Drawing.Point(121, 366);
             this.Label_email.Name = "Label_email";
-            this.Label_email.Size = new System.Drawing.Size(144, 16);
+            this.Label_email.Size = new System.Drawing.Size(179, 20);
             this.Label_email.TabIndex = 59;
             this.Label_email.Text = "2012625079@qq.com";
             // 
@@ -241,10 +235,9 @@
             // 
             this.Label_phone.AutoSize = true;
             this.Label_phone.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_phone.Location = new System.Drawing.Point(91, 346);
-            this.Label_phone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_phone.Location = new System.Drawing.Point(121, 432);
             this.Label_phone.Name = "Label_phone";
-            this.Label_phone.Size = new System.Drawing.Size(96, 16);
+            this.Label_phone.Size = new System.Drawing.Size(119, 20);
             this.Label_phone.TabIndex = 60;
             this.Label_phone.Text = "18760671623";
             // 
@@ -252,10 +245,9 @@
             // 
             this.Label_DZ.AutoSize = true;
             this.Label_DZ.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_DZ.Location = new System.Drawing.Point(91, 396);
-            this.Label_DZ.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_DZ.Location = new System.Drawing.Point(121, 495);
             this.Label_DZ.Name = "Label_DZ";
-            this.Label_DZ.Size = new System.Drawing.Size(200, 16);
+            this.Label_DZ.Size = new System.Drawing.Size(249, 20);
             this.Label_DZ.TabIndex = 61;
             this.Label_DZ.Text = "福建省漳州市平和县崎岭乡";
             // 
@@ -263,18 +255,17 @@
             // 
             this.Label_YB.AutoSize = true;
             this.Label_YB.Font = new System.Drawing.Font("宋体", 12F);
-            this.Label_YB.Location = new System.Drawing.Point(280, 293);
-            this.Label_YB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_YB.Location = new System.Drawing.Point(373, 366);
             this.Label_YB.Name = "Label_YB";
-            this.Label_YB.Size = new System.Drawing.Size(56, 16);
+            this.Label_YB.Size = new System.Drawing.Size(69, 20);
             this.Label_YB.TabIndex = 62;
             this.Label_YB.Text = "363714";
             // 
             // My_information
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 446);
+            this.ClientSize = new System.Drawing.Size(512, 558);
             this.Controls.Add(this.Label_YB);
             this.Controls.Add(this.Label_DZ);
             this.Controls.Add(this.Label_phone);
@@ -293,7 +284,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "My_information";
             this.Text = "My_information";
             this.Load += new System.EventHandler(this.My_information_Load);

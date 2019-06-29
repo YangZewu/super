@@ -43,8 +43,7 @@ namespace 超市管理系统
                 {
                     image_Head.Image = Image.FromFile(Lin["userPhoto"].ToString());
                 }
-                //不知道用什么方法
-                //image_Head.Image=File.OpenRead( Lin["userPhoto"].ToString());
+
             }
 
             Lin.Close();

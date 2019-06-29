@@ -220,6 +220,7 @@
     <None Include="bin\Debug\images\优酷月卡.jpg" />
     <None Include="bin\Debug\images\优酷季卡.jpg" />
     <None Include="bin\Debug\images\优酷年卡.jpg" />
+    <None Include="bin\Debug\images\curved_arrow_266px_1158892_easyicon.net.png" />
     <Content Include="Resources\image_2017年物联网2班.png" />
     <Content Include="Resources\登陆背景图.jpg" />
   </ItemGroup>

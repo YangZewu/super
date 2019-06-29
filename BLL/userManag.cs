@@ -52,7 +52,18 @@ namespace BLL
         {
             return userServer.XGXX(userTel, userPhoto, userName, userBbir, email, address, postcode, sex,icno);
         }
-        public static string icNo= "20193029023017";
+        public static object dhsp(int ye, int jf, string icno)
+        {
+            
+            return userServer.dhsp(ye,jf,icno);
+        }
+
+        public static object Jqjf(int ye, string icno)
+        {
+
+            return userServer.JQJF(ye, icno);   
+        }
+        public static string icNo= "20195030025039";
         public static string Name;
     }
 }

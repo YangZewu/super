@@ -88,13 +88,13 @@
             this.button19 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.button3 = new System.Windows.Forms.Button();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioyknk = new System.Windows.Forms.RadioButton();
+            this.radioykjk = new System.Windows.Forms.RadioButton();
+            this.radioykyk = new System.Windows.Forms.RadioButton();
+            this.Btn_dh = new System.Windows.Forms.Button();
+            this.radio_txnk = new System.Windows.Forms.RadioButton();
+            this.radio_txjk = new System.Windows.Forms.RadioButton();
+            this.radio_txyk = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -270,6 +270,7 @@
             this.Btn_HF.TabIndex = 12;
             this.Btn_HF.Text = "兑换";
             this.Btn_HF.UseVisualStyleBackColor = true;
+            this.Btn_HF.Click += new System.EventHandler(this.Btn_HF_Click);
             // 
             // radio_20
             // 
@@ -457,6 +458,7 @@
             this.Btn_LPK.TabIndex = 38;
             this.Btn_LPK.Text = "兑换";
             this.Btn_LPK.UseVisualStyleBackColor = true;
+            this.Btn_LPK.Click += new System.EventHandler(this.Btn_LPK_Click);
             // 
             // radio_WYXY100
             // 
@@ -557,13 +559,13 @@
             // 
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.radioButton1);
-            this.tabPage3.Controls.Add(this.radioButton2);
-            this.tabPage3.Controls.Add(this.radioButton3);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.radioButton4);
-            this.tabPage3.Controls.Add(this.radioButton5);
-            this.tabPage3.Controls.Add(this.radioButton6);
+            this.tabPage3.Controls.Add(this.radioyknk);
+            this.tabPage3.Controls.Add(this.radioykjk);
+            this.tabPage3.Controls.Add(this.radioykyk);
+            this.tabPage3.Controls.Add(this.Btn_dh);
+            this.tabPage3.Controls.Add(this.radio_txnk);
+            this.tabPage3.Controls.Add(this.radio_txjk);
+            this.tabPage3.Controls.Add(this.radio_txyk);
             this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.pictureBox13);
@@ -825,80 +827,81 @@
             this.button2.Text = "关闭";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioyknk
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(481, 411);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(178, 19);
-            this.radioButton1.TabIndex = 69;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "勾选兑换优酷视频年卡";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioyknk.AutoSize = true;
+            this.radioyknk.Location = new System.Drawing.Point(481, 411);
+            this.radioyknk.Name = "radioyknk";
+            this.radioyknk.Size = new System.Drawing.Size(178, 19);
+            this.radioyknk.TabIndex = 69;
+            this.radioyknk.TabStop = true;
+            this.radioyknk.Text = "勾选兑换优酷视频年卡";
+            this.radioyknk.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioykjk
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(249, 411);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(178, 19);
-            this.radioButton2.TabIndex = 68;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "勾选兑换优酷视频季卡";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioykjk.AutoSize = true;
+            this.radioykjk.Location = new System.Drawing.Point(249, 411);
+            this.radioykjk.Name = "radioykjk";
+            this.radioykjk.Size = new System.Drawing.Size(178, 19);
+            this.radioykjk.TabIndex = 68;
+            this.radioykjk.TabStop = true;
+            this.radioykjk.Text = "勾选兑换优酷视频季卡";
+            this.radioykjk.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioykyk
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(32, 411);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(178, 19);
-            this.radioButton3.TabIndex = 67;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "勾选兑换优酷视频月卡";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioykyk.AutoSize = true;
+            this.radioykyk.Location = new System.Drawing.Point(32, 411);
+            this.radioykyk.Name = "radioykyk";
+            this.radioykyk.Size = new System.Drawing.Size(178, 19);
+            this.radioykyk.TabIndex = 67;
+            this.radioykyk.TabStop = true;
+            this.radioykyk.Text = "勾选兑换优酷视频月卡";
+            this.radioykyk.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // Btn_dh
             // 
-            this.button3.Location = new System.Drawing.Point(278, 458);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 33);
-            this.button3.TabIndex = 60;
-            this.button3.Text = "兑换";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_dh.Location = new System.Drawing.Point(278, 458);
+            this.Btn_dh.Name = "Btn_dh";
+            this.Btn_dh.Size = new System.Drawing.Size(75, 33);
+            this.Btn_dh.TabIndex = 60;
+            this.Btn_dh.Text = "兑换";
+            this.Btn_dh.UseVisualStyleBackColor = true;
+            this.Btn_dh.Click += new System.EventHandler(this.Btn_dh_Click);
             // 
-            // radioButton4
+            // radio_txnk
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(472, 210);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(178, 19);
-            this.radioButton4.TabIndex = 66;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "勾选兑换腾讯视频年卡";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radio_txnk.AutoSize = true;
+            this.radio_txnk.Location = new System.Drawing.Point(472, 210);
+            this.radio_txnk.Name = "radio_txnk";
+            this.radio_txnk.Size = new System.Drawing.Size(178, 19);
+            this.radio_txnk.TabIndex = 66;
+            this.radio_txnk.TabStop = true;
+            this.radio_txnk.Text = "勾选兑换腾讯视频年卡";
+            this.radio_txnk.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radio_txjk
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(249, 210);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(178, 19);
-            this.radioButton5.TabIndex = 65;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "勾选兑换腾讯视频季卡";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radio_txjk.AutoSize = true;
+            this.radio_txjk.Location = new System.Drawing.Point(249, 210);
+            this.radio_txjk.Name = "radio_txjk";
+            this.radio_txjk.Size = new System.Drawing.Size(178, 19);
+            this.radio_txjk.TabIndex = 65;
+            this.radio_txjk.TabStop = true;
+            this.radio_txjk.Text = "勾选兑换腾讯视频季卡";
+            this.radio_txjk.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radio_txyk
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(29, 210);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(178, 19);
-            this.radioButton6.TabIndex = 64;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "勾选兑换腾讯视频月卡";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radio_txyk.AutoSize = true;
+            this.radio_txyk.Location = new System.Drawing.Point(29, 210);
+            this.radio_txyk.Name = "radio_txyk";
+            this.radio_txyk.Size = new System.Drawing.Size(178, 19);
+            this.radio_txyk.TabIndex = 64;
+            this.radio_txyk.TabStop = true;
+            this.radio_txyk.Text = "勾选兑换腾讯视频月卡";
+            this.radio_txyk.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
@@ -1272,13 +1275,13 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioyknk;
+        private System.Windows.Forms.RadioButton radioykjk;
+        private System.Windows.Forms.RadioButton radioykyk;
+        private System.Windows.Forms.Button Btn_dh;
+        private System.Windows.Forms.RadioButton radio_txnk;
+        private System.Windows.Forms.RadioButton radio_txjk;
+        private System.Windows.Forms.RadioButton radio_txyk;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox13;

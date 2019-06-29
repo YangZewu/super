@@ -30,24 +30,24 @@
         {
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.image_Head = new System.Windows.Forms.PictureBox();
             this.lab = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Get_label_JF = new System.Windows.Forms.Label();
             this.Get_label_ye = new System.Windows.Forms.Label();
+            this.Get_label_JF = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.Btn_WJMM = new System.Windows.Forms.Button();
             this.Label_name = new System.Windows.Forms.Label();
-            this.image_Head = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_Head)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // skinEngine1
@@ -71,6 +71,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "头像";
             // 
+            // image_Head
+            // 
+            this.image_Head.Location = new System.Drawing.Point(21, 28);
+            this.image_Head.Margin = new System.Windows.Forms.Padding(5);
+            this.image_Head.Name = "image_Head";
+            this.image_Head.Size = new System.Drawing.Size(79, 74);
+            this.image_Head.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.image_Head.TabIndex = 0;
+            this.image_Head.TabStop = false;
+            // 
             // lab
             // 
             this.lab.AutoSize = true;
@@ -91,6 +101,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.Get_label_ye);
             this.groupBox1.Controls.Add(this.Get_label_JF);
             this.groupBox1.Controls.Add(this.button3);
@@ -106,32 +117,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "门店会员卡";
             // 
-            // label2
+            // Get_label_ye
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "积分";
+            this.Get_label_ye.AutoSize = true;
+            this.Get_label_ye.BackColor = System.Drawing.Color.Transparent;
+            this.Get_label_ye.Font = new System.Drawing.Font("宋体", 12F);
+            this.Get_label_ye.Location = new System.Drawing.Point(289, 39);
+            this.Get_label_ye.Name = "Get_label_ye";
+            this.Get_label_ye.Size = new System.Drawing.Size(69, 20);
+            this.Get_label_ye.TabIndex = 5;
+            this.Get_label_ye.Text = "label5";
             // 
-            // label3
+            // Get_label_JF
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(273, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "余额";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(155, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 33);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "购买积分";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Get_label_JF.AutoSize = true;
+            this.Get_label_JF.BackColor = System.Drawing.Color.Transparent;
+            this.Get_label_JF.Font = new System.Drawing.Font("宋体", 12F);
+            this.Get_label_JF.Location = new System.Drawing.Point(44, 43);
+            this.Get_label_JF.Name = "Get_label_JF";
+            this.Get_label_JF.Size = new System.Drawing.Size(69, 20);
+            this.Get_label_JF.TabIndex = 4;
+            this.Get_label_JF.Text = "label4";
             // 
             // button3
             // 
@@ -141,24 +147,35 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "充值余额";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // Get_label_JF
+            // button2
             // 
-            this.Get_label_JF.AutoSize = true;
-            this.Get_label_JF.Location = new System.Drawing.Point(45, 44);
-            this.Get_label_JF.Name = "Get_label_JF";
-            this.Get_label_JF.Size = new System.Drawing.Size(55, 15);
-            this.Get_label_JF.TabIndex = 4;
-            this.Get_label_JF.Text = "label4";
+            this.button2.Location = new System.Drawing.Point(155, 26);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 33);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "购买积分";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // Get_label_ye
+            // label3
             // 
-            this.Get_label_ye.AutoSize = true;
-            this.Get_label_ye.Location = new System.Drawing.Point(276, 44);
-            this.Get_label_ye.Name = "Get_label_ye";
-            this.Get_label_ye.Size = new System.Drawing.Size(55, 15);
-            this.Get_label_ye.TabIndex = 5;
-            this.Get_label_ye.Text = "label5";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(290, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 15);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "余额";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(45, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "积分";
             // 
             // label6
             // 
@@ -178,15 +195,6 @@
             this.label7.TabIndex = 39;
             this.label7.Text = "15/200";
             // 
-            // Btn_WJMM
-            // 
-            this.Btn_WJMM.Location = new System.Drawing.Point(304, 254);
-            this.Btn_WJMM.Name = "Btn_WJMM";
-            this.Btn_WJMM.Size = new System.Drawing.Size(96, 31);
-            this.Btn_WJMM.TabIndex = 40;
-            this.Btn_WJMM.Text = "忘记密码";
-            this.Btn_WJMM.UseVisualStyleBackColor = true;
-            // 
             // Label_name
             // 
             this.Label_name.AutoSize = true;
@@ -195,16 +203,6 @@
             this.Label_name.Size = new System.Drawing.Size(55, 15);
             this.Label_name.TabIndex = 41;
             this.Label_name.Text = "label1";
-            // 
-            // image_Head
-            // 
-            this.image_Head.Location = new System.Drawing.Point(21, 28);
-            this.image_Head.Margin = new System.Windows.Forms.Padding(5);
-            this.image_Head.Name = "image_Head";
-            this.image_Head.Size = new System.Drawing.Size(79, 74);
-            this.image_Head.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.image_Head.TabIndex = 0;
-            this.image_Head.TabStop = false;
             // 
             // label1
             // 
@@ -216,6 +214,16 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "个人中心";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(261, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "￥";
+            // 
             // Personal_Center
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -223,7 +231,6 @@
             this.ClientSize = new System.Drawing.Size(428, 441);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Label_name);
-            this.Controls.Add(this.Btn_WJMM);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
@@ -234,9 +241,9 @@
             this.Text = "Personal_Center";
             this.Load += new System.EventHandler(this.Personal_Center_Load);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.image_Head)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.image_Head)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,8 +265,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button Btn_WJMM;
         private System.Windows.Forms.Label Label_name;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

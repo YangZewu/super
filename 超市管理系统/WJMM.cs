@@ -13,6 +13,7 @@ namespace 超市管理系统
 {
     public partial class WJMM : Form
     {
+        
         public WJMM()
         {
             InitializeComponent();
@@ -48,7 +49,7 @@ namespace 超市管理系统
                 int i = (int)userManag.XGMM(Pwd.Text, userManag.icNo);
                 if (i > 0)
                 {
-                    MessageBox.Show("修改成功！");
+                    MessageBox.Show("已修改成功！，請重新登录");
                     this.Close();
                 }
                 else

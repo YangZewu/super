@@ -61,7 +61,7 @@ namespace 超市管理系统
         }
         public bool Nonull()
         {
-            
+
             if (textBox_Pwd.Text == "" || TextBox_Tel.Text == "" ||
                 ".\\images\\" + Textbox_icNo.Text + ".jpg" == "" || Textbox_Name.Text == "" ||
                 TextBox_Email.Text == "" || Textbox_address.Text == "" || TextBox_PC.Text == "" ||
@@ -96,14 +96,24 @@ namespace 超市管理系统
                             int dcwrity = DCHelper.dc_write(icdev, 4, Textbox_icNo.Text);
                             if (dcwrity == 0)
                             {
+                                string Car_photo;
+                                if (image_Head.Image == null)
+                                {
+                                    Car_photo = "暂无图片";
+                                }
+                                else
+                                {
+                                    Car_photo = ".\\images\\" + Textbox_icNo.Text + ".jpg";
+                                }
                                 int i = userManag.regUser(Textbox_icNo.Text, textBox_Pwd.Text, TextBox_Tel.Text,
-                                                            ".\\images\\" + Textbox_icNo.Text + ".jpg", Textbox_Name.Text, Time_Day.Value,
+                                                            Car_photo, Textbox_Name.Text, Time_Day.Value,
                                                             Time_StartDay.Value, Time_Exit.Value, TextBox_Email.Text, Textbox_address.Text, TextBox_PC.Text,
                                                             comboBox_sex.Text);
+                               
                                 if (i > 0)
                                 {
                                    
-                                        DCHelper.dc_beep(icdev, 100);
+                                        //DCHelper.dc_beep(icdev, 100);
                                         MessageBox.Show("发卡成功！");
                                         Close();
                                     

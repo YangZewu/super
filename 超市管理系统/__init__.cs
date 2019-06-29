@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using BLL;
 
+
 namespace 超市管理系统
 {
     public partial class __init__ : Form
@@ -129,7 +130,7 @@ namespace 超市管理系统
             }
         }
 
-        private void Label_WJMM_Click(object sender, EventArgs e)
+        private void Label6_Click(object sender, EventArgs e)
         {
             WJMM wJMM = new WJMM();
             wJMM.Show();

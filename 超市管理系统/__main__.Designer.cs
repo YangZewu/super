@@ -33,6 +33,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.首页ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查看个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.修改个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.会员卡管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.新建会员卡ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.注销会员卡ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,11 +49,13 @@
             this.ZT = new System.Windows.Forms.ToolStripStatusLabel();
             this.NowTime_NYR = new System.Windows.Forms.ToolStripStatusLabel();
             this.NowTime_HMS = new System.Windows.Forms.ToolStripStatusLabel();
+            this.忘记密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.images_L = new System.Windows.Forms.PictureBox();
-            this.查看个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改个人信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.images_L)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,10 +97,25 @@
             // 
             this.个人信息ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.查看个人信息ToolStripMenuItem,
-            this.修改个人信息ToolStripMenuItem});
+            this.修改个人信息ToolStripMenuItem,
+            this.忘记密码ToolStripMenuItem});
             this.个人信息ToolStripMenuItem.Name = "个人信息ToolStripMenuItem";
             this.个人信息ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.个人信息ToolStripMenuItem.Text = "个人信息";
+            // 
+            // 查看个人信息ToolStripMenuItem
+            // 
+            this.查看个人信息ToolStripMenuItem.Name = "查看个人信息ToolStripMenuItem";
+            this.查看个人信息ToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.查看个人信息ToolStripMenuItem.Text = "查看个人信息";
+            this.查看个人信息ToolStripMenuItem.Click += new System.EventHandler(this.查看个人信息ToolStripMenuItem_Click);
+            // 
+            // 修改个人信息ToolStripMenuItem
+            // 
+            this.修改个人信息ToolStripMenuItem.Name = "修改个人信息ToolStripMenuItem";
+            this.修改个人信息ToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.修改个人信息ToolStripMenuItem.Text = "修改个人信息";
+            this.修改个人信息ToolStripMenuItem.Click += new System.EventHandler(this.修改个人信息ToolStripMenuItem_Click);
             // 
             // 会员卡管理ToolStripMenuItem
             // 
@@ -163,7 +182,7 @@
             this.NowTime_NYR,
             this.NowTime_HMS});
             this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 347);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 385);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(824, 26);
             this.statusStrip1.TabIndex = 2;
@@ -200,6 +219,23 @@
             this.NowTime_HMS.Size = new System.Drawing.Size(49, 20);
             this.NowTime_HMS.Text = "21:19";
             // 
+            // 忘记密码ToolStripMenuItem
+            // 
+            this.忘记密码ToolStripMenuItem.Name = "忘记密码ToolStripMenuItem";
+            this.忘记密码ToolStripMenuItem.Size = new System.Drawing.Size(182, 26);
+            this.忘记密码ToolStripMenuItem.Text = "忘记密码";
+            this.忘记密码ToolStripMenuItem.Click += new System.EventHandler(this.忘记密码ToolStripMenuItem_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::超市管理系统.Properties.Resources.curved_arrow_266px_1158892_easyicon_net;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 250);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // images_L
             // 
             this.images_L.Location = new System.Drawing.Point(16, 50);
@@ -210,23 +246,24 @@
             this.images_L.TabIndex = 1;
             this.images_L.TabStop = false;
             // 
-            // 查看个人信息ToolStripMenuItem
+            // label1
             // 
-            this.查看个人信息ToolStripMenuItem.Name = "查看个人信息ToolStripMenuItem";
-            this.查看个人信息ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.查看个人信息ToolStripMenuItem.Text = "查看个人信息";
-            // 
-            // 修改个人信息ToolStripMenuItem
-            // 
-            this.修改个人信息ToolStripMenuItem.Name = "修改个人信息ToolStripMenuItem";
-            this.修改个人信息ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.修改个人信息ToolStripMenuItem.Text = "修改个人信息";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 20F);
+            this.label1.Location = new System.Drawing.Point(46, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(559, 34);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "快点击，去兑换商品吧！！！！！！";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // __main__
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 373);
+            this.ClientSize = new System.Drawing.Size(824, 411);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.images_L);
             this.Controls.Add(this.menuStrip1);
@@ -239,6 +276,7 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.images_L)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -268,5 +306,8 @@
         private System.Windows.Forms.ToolStripMenuItem 退出登陆ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查看个人信息ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 修改个人信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 忘记密码ToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

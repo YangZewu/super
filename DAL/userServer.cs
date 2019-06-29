@@ -51,7 +51,7 @@ namespace DAL
         }
         public static SqlDataReader getJF(string icno)
         {
-            string sqlstr = String.Format("select userName,JF,YE from userTables where userICno='{0}'", icno);
+            string sqlstr = String.Format("select userPhoto,userName,JF,YE from userTables where userICno='{0}'", icno);
             return DBHelper.executeReader(sqlstr);
 
         }
@@ -69,6 +69,17 @@ namespace DAL
         {
             string sql = String.Format("UPDATE userTables SET userTel='{0}',userPhoto='{1}',userName='{2}'," +
                 "userBbir='{3}',email='{4}',address='{5}',postcode='{6}',sex='{7}' WHERE userICno = '{8}'", userTel, userPhoto, userName, userBbir, email, address, postcode, sex,icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
+        public static object dhsp(int ye, int jf, string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET JF = JF-{0},YE=YE-{1} WHERE userICno = '{2}'", jf, ye, icno);
+            return DBHelper.ExecuteNonQuery(sql);
+        }
+
+        public static object JQJF(int jf, string icno)
+        {
+            string sql = String.Format("UPDATE userTables SET JF=JF-0} WHERE userICno = '{1}'", jf, icno);
             return DBHelper.ExecuteNonQuery(sql);
         }
     }

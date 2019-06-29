@@ -65,7 +65,7 @@ namespace 超市管理系统
         {
             if (ZT.Text != "离线中")
             {
-                if (userManag.icNo != "20193029023017s")//后面需要改为区分会员跟管理员的权限
+                if (userManag.Name != "管理员")//后面需要改为区分会员跟管理员的权限
                 {
                     MessageBox.Show("您没有权限访问,如需办卡請联系管理员办理！", "权限", MessageBoxButtons.OK);
                 }
@@ -143,6 +143,60 @@ namespace 超市管理系统
                 init__.Show();
             }
 
+        }
+
+        private void 查看个人信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ZT.Text != "离线中")
+            {
+                My_information my = new My_information();
+                my.Show();
+            }
+            else
+            {
+                MessageBox.Show("您当前状态离线中，请先登陆！！");
+                Close();
+                __init__ init__ = new __init__();
+                init__.Show();
+            }
+        }
+
+        private void 修改个人信息ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ZT.Text != "离线中")
+            {
+                XGXX my = new XGXX();
+                my.Show();
+            }
+            else
+            {
+                MessageBox.Show("您当前状态离线中，请先登陆！！");
+                Close();
+                __init__ init__ = new __init__();
+                init__.Show();
+            }
+        }
+
+        private void 忘记密码ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ZT.Text != "离线中")
+            {
+                WJMM my = new WJMM();
+                my.Show();
+            }
+            else
+            {
+                MessageBox.Show("您当前状态离线中，请先登陆！！");
+                Close();
+                __init__ init__ = new __init__();
+                init__.Show();
+            }
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            Supermarket supermarket = new Supermarket();
+            supermarket.Show();
         }
     }
 }
