@@ -16,13 +16,18 @@ namespace 超市管理系统
         public XGXX()
         {
             InitializeComponent();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
+            this.skinEngine1.SkinFile = Application.StartupPath + "//DeepCyan.ssk";
         }
 
         private void BtnXG_Click(object sender, EventArgs e)
         {
             int i = (int)userManag.XGXX(TextBox_Tel.Text, ".\\images\\" + Textbox_icNo.Text+".jpg", Textbox_Name.Text, TextBox_Bir.Value, TextBox_Email.Text, Textbox_address.Text, TextBox_PC.Text, comboBox_sex.Text, Textbox_icNo.Text);
             if (i > 0)
+            { 
                 MessageBox.Show("修改成功！");
+
+            }   
             else
                 MessageBox.Show("修改失败！");
         }

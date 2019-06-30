@@ -36,7 +36,6 @@
             this.Pwd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Btn_Close = new System.Windows.Forms.Button();
-            this.Btn_GeticNo = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Click_Code = new System.Windows.Forms.Label();
@@ -131,16 +130,6 @@
             this.Btn_Close.UseVisualStyleBackColor = true;
             this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
-            // Btn_GeticNo
-            // 
-            this.Btn_GeticNo.Location = new System.Drawing.Point(67, 515);
-            this.Btn_GeticNo.Margin = new System.Windows.Forms.Padding(4);
-            this.Btn_GeticNo.Name = "Btn_GeticNo";
-            this.Btn_GeticNo.Size = new System.Drawing.Size(84, 39);
-            this.Btn_GeticNo.TabIndex = 25;
-            this.Btn_GeticNo.Text = "读卡";
-            this.Btn_GeticNo.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -149,9 +138,9 @@
             this.label5.Location = new System.Drawing.Point(159, 484);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(292, 15);
+            this.label5.Size = new System.Drawing.Size(202, 15);
             this.label5.TabIndex = 24;
-            this.label5.Text = "先读卡后登录，验证码严格区分大小写！！";
+            this.label5.Text = "修改密码成功后，请重新登陆";
             // 
             // label6
             // 
@@ -236,7 +225,6 @@
             this.ClientSize = new System.Drawing.Size(459, 594);
             this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.Btn_GG);
-            this.Controls.Add(this.Btn_GeticNo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Click_Code);
@@ -269,7 +257,6 @@
         private System.Windows.Forms.TextBox Pwd;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Btn_Close;
-        private System.Windows.Forms.Button Btn_GeticNo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label Click_Code;

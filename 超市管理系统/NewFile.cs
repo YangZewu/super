@@ -112,10 +112,10 @@ namespace 超市管理系统
                                
                                 if (i > 0)
                                 {
-                                   
-                                        //DCHelper.dc_beep(icdev, 100);
-                                        MessageBox.Show("发卡成功！");
-                                        Close();
+
+                                    DCHelper.dc_beep(icdev, 100);
+                                    MessageBox.Show("发卡成功！");
+                                    Close();
                                     
                                 }
                             }

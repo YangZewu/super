@@ -44,6 +44,8 @@ namespace 超市管理系统
             {
                 int ye = 20;
                 userManag.CZYE(ye, userManag.icNo);
+                MessageBox.Show("充值成功！");
+                this.Close();
             }
             else if (Get_comboBox_JE.Text == "50")
             {

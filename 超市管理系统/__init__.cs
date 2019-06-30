@@ -114,7 +114,7 @@ namespace 超市管理系统
 
                                 MessageBox.Show("读卡成功", "提示", MessageBoxButtons.OK);
                                 Lin.Close();
-                                //DCHelper.dc_beep(icdev, 100);
+                                DCHelper.dc_beep(icdev, 100);
                             }
                         }
                     }

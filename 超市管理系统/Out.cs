@@ -70,7 +70,7 @@ namespace 超市管理系统
                                 }
 
                                 MessageBox.Show("读卡成功", "提示", MessageBoxButtons.OK);
-                               // DCHelper.dc_beep(icdev, 100);
+                                DCHelper.dc_beep(icdev, 100);
                             }
                         }
                     }
@@ -104,6 +104,11 @@ namespace 超市管理系统
                 }
             }
             
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -50,7 +50,10 @@ namespace 超市管理系统
                 if (i > 0)
                 {
                     MessageBox.Show("已修改成功！，請重新登录");
+                    __main__ __Main__ = new __main__();
+                    __Main__.Close();
                     this.Close();
+
                 }
                 else
                 {

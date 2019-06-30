@@ -45,8 +45,8 @@
             this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine();
             this.label5 = new System.Windows.Forms.Label();
             this.TextBox_SetIcTime = new System.Windows.Forms.TextBox();
-            this.image_Head = new System.Windows.Forms.PictureBox();
             this.lab = new System.Windows.Forms.Label();
+            this.image_Head = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image_Head)).BeginInit();
             this.SuspendLayout();
@@ -174,6 +174,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Btn_GetIC
             // 
@@ -213,16 +214,6 @@
             this.TextBox_SetIcTime.Size = new System.Drawing.Size(367, 25);
             this.TextBox_SetIcTime.TabIndex = 39;
             // 
-            // image_Head
-            // 
-            this.image_Head.Location = new System.Drawing.Point(27, 31);
-            this.image_Head.Margin = new System.Windows.Forms.Padding(5);
-            this.image_Head.Name = "image_Head";
-            this.image_Head.Size = new System.Drawing.Size(151, 122);
-            this.image_Head.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.image_Head.TabIndex = 0;
-            this.image_Head.TabStop = false;
-            // 
             // lab
             // 
             this.lab.AutoSize = true;
@@ -232,6 +223,16 @@
             this.lab.Size = new System.Drawing.Size(185, 34);
             this.lab.TabIndex = 40;
             this.lab.Text = "注销会员卡";
+            // 
+            // image_Head
+            // 
+            this.image_Head.Location = new System.Drawing.Point(27, 31);
+            this.image_Head.Margin = new System.Windows.Forms.Padding(5);
+            this.image_Head.Name = "image_Head";
+            this.image_Head.Size = new System.Drawing.Size(151, 122);
+            this.image_Head.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.image_Head.TabIndex = 0;
+            this.image_Head.TabStop = false;
             // 
             // Out
             // 
